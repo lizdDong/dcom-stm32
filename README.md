@@ -3,35 +3,21 @@
 #### 介绍
 STM32的外设和组件驱动集合
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 驱动包含有：
+#### 1、片内外设驱动
+	DIO - 支持输入滤波
+	ADC - 采用DMA，支持双通道同步采样，支持卡尔曼滤波、部分中值滤波、部分最大值滤波等多种滤波形式
+	DAC - 支持多种波形输出
+	UART - 支持中断和DMA两种传输方式，采用fifo缓存机制
+	CAN - 采用fifo缓存机制
+	FLASH - 支持任意位置读写
+	另外还有RTC、SPI、IWDG、PWM等等驱动模块
+	
+#### 2、组件
+	FIFO - 支持读写超时机制，临界区保护机制
+	LOG - 支持日志等级设置，支持输出文件名、行号、时间戳等信息，支持十六进制和二进制方式输出日志
+	LED - 支持闪烁输出
+	FSM - 有限状态机，支持入状态和出状态执行函数
+	IAP - 在系统升级，可配合私有协议进行
+	
+# 此仓库不定期更新，欢迎Star
